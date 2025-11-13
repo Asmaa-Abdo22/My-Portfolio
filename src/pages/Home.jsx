@@ -6,14 +6,15 @@ import {
   FaLinkedin,
   FaEnvelope,
   FaFileDownload,
+  FaArrowRight,
 } from "react-icons/fa";
 import myImage from "../assets/smsma.jpg";
 import resumePDF from "../assets/Asmaa Abdo Resume.pdf";
 
 import About from "./About";
-import Projects from "./Projects";
 import Experience from "./Experience";
 import Contact from "./Contact";
+
 const Home = () => {
   const sectionVariants = {
     hidden: { opacity: 0, x: 100 },
@@ -179,13 +180,52 @@ const Home = () => {
           <About />
         </motion.div>
 
+        {/* Elegant Projects Preview Section */}
         <motion.div
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
           variants={sectionVariants}
         >
-          <Projects />
+          <section className=" px-6 md:px-12 lg:px-28">
+            <div className="max-w-4xl mx-auto text-center">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 bg-clip-text text-transparent"
+              >
+                Featured Projects
+              </motion.h2>
+              
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+                className="text-gray-400 mb-8 leading-relaxed text-lg"
+              >
+                Explore my portfolio of modern web applications and creative solutions
+              </motion.p>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                className="flex justify-center"
+              >
+                <Link to="/projects">
+                  <motion.button
+                    whileHover={{ scale: 1.02, y: -1 }}
+                    whileTap={{ scale: 0.98 }}
+                    className="px-6 py-3 border border-purple-500/30 text-white rounded-lg font-semibold hover:bg-purple-500/10 transition-all duration-300 flex items-center gap-2 group text-sm md:text-base"
+                  >
+                    View All Projects
+                    <FaArrowRight className="group-hover:translate-x-1 transition-transform duration-300 text-purple-400" />
+                  </motion.button>
+                </Link>
+              </motion.div>
+            </div>
+          </section>
         </motion.div>
 
         <motion.div

@@ -192,32 +192,9 @@ const About = () => {
                   Mobile Development scholarship.
                 </p>
 
-                <p>
-                  At ITI, I immersed myself in modern technologies like{" "}
-                  <span className="text-pink-400 font-medium">
-                    React.js, Next.js, and TypeScript
-                  </span>
-                  , working on real-world projects including the 'Hatly'
-                  logistics platform. This experience transformed my theoretical
-                  knowledge into practical, industry-ready skills.
-                </p>
+              
 
-                <p>
-                  What drives me in development is the{" "}
-                  <span className="text-pink-400 font-medium">
-                    problem-solving challenge
-                  </span>{" "}
-                  - I love turning complex requirements into elegant,
-                  user-friendly solutions. I'm passionate about writing{" "}
-                  <span className="text-purple-400 font-medium">
-                    clean, maintainable code
-                  </span>{" "}
-                  and creating{" "}
-                  <span className="text-blue-400 font-medium">
-                    responsive web applications
-                  </span>{" "}
-                  that make a difference.
-                </p>
+               
 
                 <p>
                   My education at{" "}
