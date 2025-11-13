@@ -8,20 +8,21 @@ const Navbar = () => {
   const location = useLocation()
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20)
-    }
+    const handleScroll = () => setIsScrolled(window.scrollY > 20)
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
+    setIsMobileMenuOpen(false)
+  }, [location.pathname])
 
   const navLinks = [
     { path: '/', label: 'Home' },
     { path: '/about', label: 'About' },
     { path: '/projects', label: 'Projects' },
     { path: '/experience', label: 'Experience' },
-    
-    
     { path: '/contact', label: 'Contact' },
   ]
 
@@ -31,14 +32,11 @@ const Navbar = () => {
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? 'bg-[#0a0a0f]/95 backdrop-blur-md shadow-lg'
-          : 'bg-transparent'
+        isScrolled ? 'backdrop-blur-md shadow-lg' : 'bg-transparent'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
-          {/* Logo */}
+        <div className="flex items-center justify-between h-18 py-3">
           <Link to="/" className="flex items-center space-x-2">
             <motion.div
               whileHover={{ scale: 1.1 }}
@@ -48,7 +46,6 @@ const Navbar = () => {
             </motion.div>
           </Link>
 
-          {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
               <Link
@@ -73,11 +70,9 @@ const Navbar = () => {
             ))}
           </div>
 
-          {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="md:hidden text-white p-2"
-            aria-label="Toggle menu"
           >
             <svg
               className="w-6 h-6"
@@ -98,7 +93,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div
@@ -112,7 +106,6 @@ const Navbar = () => {
                 <Link
                   key={link.path}
                   to={link.path}
-                  onClick={() => setIsMobileMenuOpen(false)}
                   className={`block py-2 px-3 rounded-lg transition-colors ${
                     location.pathname === link.path
                       ? 'bg-gradient-to-r from-[#221D52] to-[#5a4a9e] text-white'
@@ -131,4 +124,3 @@ const Navbar = () => {
 }
 
 export default Navbar
-

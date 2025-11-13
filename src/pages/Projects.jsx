@@ -62,7 +62,7 @@ const Projects = () => {
   }
 
   return (
-    <div className="min-h-screen py-32 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen pt-20 pb-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <motion.div
@@ -71,7 +71,7 @@ const Projects = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h1 className="text-5xl md:text-6xl font-bold mb-4">
+          <h1 className="text-4xl font-bold mb-4">
             <span className="bg-gradient-to-r from-[#221D52] via-[#5a4a9e] to-[#7d6bb8] bg-clip-text text-transparent">
               My Projects
             </span>
