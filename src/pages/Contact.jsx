@@ -49,7 +49,11 @@ const Contact = () => {
 
   const itemVariants = {
     hidden: { opacity: 0, y: 30 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.8, ease: "easeOut" },
+    },
   };
 
   const inputVariants = {
@@ -89,7 +93,8 @@ const Contact = () => {
             variants={itemVariants}
             className="text-gray-300 text-sm md:text-xl max-w-3xl mx-auto font-light leading-relaxed"
           >
-            Have a project, question, or just want to say hi? Drop me a message below  I'll get back to you soon.
+            Have a project, question, or just want to say hi? Drop me a message
+            below I'll get back to you soon.
           </motion.p>
         </motion.div>
 
@@ -101,7 +106,11 @@ const Contact = () => {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.4, duration: 0.8 }}
             >
-              <motion.form onSubmit={handleSubmit} className="space-y-6" variants={containerVariants}>
+              <motion.form
+                onSubmit={handleSubmit}
+                className="space-y-6"
+                variants={containerVariants}
+              >
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <motion.div variants={itemVariants}>
                     <label className="block text-sm font-medium text-gray-300 mb-3 font-light">
@@ -160,7 +169,8 @@ const Contact = () => {
                     animate={{ opacity: 1, scale: 1 }}
                     className="p-4 bg-green-500/10 border border-green-500/30 rounded-xl text-green-400 text-center font-light text-sm"
                   >
-                     Thank you! I've received your message and will get back to you soon.
+                    Thank you! I've received your message and will get back to
+                    you soon.
                   </motion.div>
                 )}
                 {submitStatus === "error" && (
@@ -180,9 +190,27 @@ const Contact = () => {
                   whileHover="hover"
                   whileTap="tap"
                   disabled={isSubmitting}
-                  className="w-full px-6 py-3 rounded-xl bg-gradient-to-r from-purple-900 to-purple-700 text-white font-medium shadow-lg hover:shadow-purple-500/25 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed text-sm"
+                  className="px-6 py-2
+border border-purple-400/40 
+text-white 
+rounded-lg 
+font-semibold 
+bg-purple-500/5
+hover:bg-purple-500/15 
+backdrop-blur-sm
+transition-all duration-300 
+flex items-center gap-2 
+group 
+text-sm 
+shadow-sm hover:shadow-md hover:shadow-purple-500/20 mx-auto"
                 >
-                  {isSubmitting ? <span className="flex items-center justify-center">Sending...</span> : "Send Message"}
+                  {isSubmitting ? (
+                    <span className="flex items-center justify-center">
+                      Sending...
+                    </span>
+                  ) : (
+                    "Send Message"
+                  )}
                 </motion.button>
               </motion.form>
 

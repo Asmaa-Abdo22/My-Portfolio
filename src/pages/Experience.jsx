@@ -135,7 +135,7 @@ const Experience = () => {
   };
 
   return (
-    <section className="min-h-screen py-12 mt-20 px-6 md:px-20 text-gray-200 relative">
+    <section className="min-h-screen pb-12 mt-20 px-6 md:px-20 text-gray-200 relative">
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}

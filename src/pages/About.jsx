@@ -101,7 +101,7 @@ const About = () => {
   };
 
   return (
-    <section className="min-h-screen py-20 px-6 md:px-20 text-gray-200 relative overflow-hidden">
+    <section className="min-h-screen pt-16 pb-20 px-6 md:px-20 text-gray-200 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
@@ -263,7 +263,7 @@ const About = () => {
           viewport={{ once: true }}
           className="text-center"
         >
-          <div className="bg-gradient-to-r from-pink-500/10 via-purple-500/10 to-blue-500/10 backdrop-blur-xl rounded-2xl p-8 border border-white/10">
+          <div className="bg-gradient-to-r from-pink-400/10 via-purple-500/10 to-purple-500/10 backdrop-blur-xl rounded-2xl p-8 border border-white/10">
             <h3 className="text-2xl font-bold text-white mb-4">
               Ready to Bring Your Ideas to Life?
             </h3>
@@ -278,7 +278,7 @@ const About = () => {
               }}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-8 py-3 bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-xl font-semibold hover:shadow-lg transition-all duration-300"
+              className="px-8 py-3 bg-gradient-to-r from-pink-600 to-purple-700 text-white rounded-xl font-semibold hover:shadow-lg transition-all duration-300"
             >
               Get In Touch
             </motion.button>

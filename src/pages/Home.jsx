@@ -31,12 +31,12 @@ const Home = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="text-5xl md:text-7xl font-bold mb-4"
+              className="text-5xl md:text-5xl font-bold mb-4"
             >
-              <span className="bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent">
+              <span className=" bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent">
                 Hi, I'm{" "}
               </span>
-              <span className="bg-gradient-to-r from-[#4b3eff] via-[#8b6fff] to-[#a698ff] bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-[#ec4899] via-[#a855f7] to-[#6366f1]  bg-clip-text text-transparent">
                 Asmaa Abdo
               </span>
             </motion.h1>
@@ -45,7 +45,7 @@ const Home = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-2xl md:text-3xl font-semibold mb-6 bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 bg-clip-text text-transparent animate-gradient"
+              className="text-2xl md:text-3xl font-semibold mb-6 bg-gradient-to-r from-pink-300 via-purple-300 to-blue-400 bg-clip-text text-transparent animate-gradient"
             >
               <TypeAnimation
                 sequence={[
@@ -81,7 +81,19 @@ const Home = () => {
                 <motion.button
                   whileHover={{ scale: 1.05, y: -1 }}
                   whileTap={{ scale: 0.95 }}
-                  className="px-5 py-2 bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-lg font-semibold shadow-md hover:shadow-lg transition-all duration-300 flex items-center gap-2 text-sm md:text-base"
+                  className="px-6 py-3 
+border border-purple-400/40 
+text-white 
+rounded-lg 
+font-semibold 
+bg-purple-500/5
+hover:bg-purple-500/15 
+backdrop-blur-sm
+transition-all duration-300 
+flex items-center gap-2 
+group 
+text-sm md:text-base
+shadow-sm hover:shadow-md hover:shadow-purple-500/20"
                 >
                   View My Work
                 </motion.button>
