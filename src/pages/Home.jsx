@@ -216,7 +216,7 @@ shadow-sm hover:shadow-md hover:shadow-purple-500/20"
                 transition={{ duration: 0.6, delay: 0.1 }}
                 className="text-gray-400 mb-8 leading-relaxed text-lg"
               >
-                Explore my portfolio of modern web applications and creative solutions
+                Explore 33+ projects showcasing my skills in modern web applications and creative solutions.
               </motion.p>
 
               <motion.div

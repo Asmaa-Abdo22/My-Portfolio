@@ -36,5 +36,10 @@ body {
   border-radius: 5px;
 }
 
+::selection{
+  background-color: #8b5cf6;
+  color: #faf5ff;
+}
+
 
 

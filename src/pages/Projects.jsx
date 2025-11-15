@@ -1,115 +1,90 @@
-import { useState } from 'react';
-import { motion } from 'framer-motion';
-import { FaReact, FaJs, FaHtml5, FaCss3Alt, FaBootstrap, FaNodeJs } from 'react-icons/fa';
-import { SiNextdotjs, SiTailwindcss, SiRedux, SiMui, SiReactquery } from 'react-icons/si';
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import {
+  FaReact,
+  FaJs,
+  FaHtml5,
+  FaCss3Alt,
+  FaBootstrap,
+  FaNodeJs,
+} from "react-icons/fa";
+import {
+  SiTailwindcss,
+  SiRedux,
+  SiMui,
+  SiReactquery,
+  SiExpress,
+  SiMongodb,
+  SiNodedotjs,
+  SiCloudinary,
+} from "react-icons/si";
+import { projects, categories } from "../components/projectsData.js";
 
 const Projects = () => {
-  const [activeFilter, setActiveFilter] = useState('React');
-
-  const projects = [
-    {
-      name: 'Hatly Logistics Platform',
-      description:
-        'Developed and maintained the web frontend for a logistics platform designed to optimize shipping and delivery services.',
-      technologies: ['React', 'Material-UI', 'Redux', 'REST APIs'],
-      category: 'React',
-      liveDemo: 'https://hatly-website.vercel.app/',
-      github: null,
-    },
-    {
-      name: 'SwiftShop E-commerce',
-      description:
-        'End-to-end shopping experience with product pages, wishlist, and order tracking. Implemented protected routes and state management.',
-      technologies: ['React', 'Tailwind CSS', 'React Query'],
-      category: 'React',
-      liveDemo: 'https://swift-shop-ecommerce.vercel.app/',
-      github: null,
-    },
-    {
-      name: 'WatchZone YouTube Clone',
-      description:
-        'YouTube clone with video streaming, search functionality, and channel browsing. Features video recommendations and category filtering.',
-      technologies: ['React', 'Tailwind CSS', 'React Query'],
-      category: 'React',
-      liveDemo: 'https://watchzone-asmaa.netlify.app/',
-      github: null,
-    },
-    {
-      name: 'Portfolio Website',
-      description:
-        'Modern portfolio website with smooth animations, responsive design, and project showcase.',
-      technologies: ['Next.js', 'Tailwind CSS', 'Framer Motion'],
-      category: 'Next.js',
-      liveDemo: '#',
-      github: null,
-    },
-    {
-      name: 'To-Do List Web App',
-      description:
-        'Interactive task management application demonstrating CRUD operations and search functionality.',
-      technologies: ['HTML', 'CSS', 'JavaScript'],
-      category: 'JavaScript',
-      liveDemo: 'https://to-do-app-js-cyan.vercel.app/',
-      github: null,
-    },
-    {
-      name: 'Quiz Game Application',
-      description: 'Interactive quiz application built with vanilla JavaScript following OOP principles.',
-      technologies: ['JavaScript', 'OOP'],
-      category: 'JavaScript',
-      liveDemo: 'https://quiz-game-two-lake.vercel.app/',
-      github: null,
-    },
-  ];
-
-  const categories = ['React', 'Next.js', 'JavaScript', 'HTML & CSS'];
+  const [activeFilter, setActiveFilter] = useState("React");
 
   const iconsMap = {
     React: <FaReact className="text-sky-400" />,
-    'Next.js': <SiNextdotjs className="text-white" />,
     JavaScript: <FaJs className="text-yellow-400" />,
     HTML: <FaHtml5 className="text-orange-500" />,
     CSS: <FaCss3Alt className="text-blue-500" />,
-    'Tailwind CSS': <SiTailwindcss className="text-cyan-400" />,
+    "Tailwind CSS": <SiTailwindcss className="text-cyan-400" />,
     Bootstrap: <FaBootstrap className="text-purple-500" />,
-    'Material-UI': <SiMui className="text-blue-400" />,
+    "Material-UI": <SiMui className="text-blue-400" />,
+    "Material UI": <SiMui className="text-blue-400" />,
     Redux: <SiRedux className="text-purple-400" />,
-    NodeJS: <FaNodeJs className="text-green-500" />,
-    'React Query': <SiReactquery className="text-pink-500" />,
+    "React Query": <SiReactquery className="text-pink-500" />,
+    Recoil: <FaReact className="text-sky-400" />,
+    "Framer-Motion": <FaReact className="text-sky-400" />,
+    "React Awesome Reveal": <FaReact className="text-sky-400" />,
+    "Node.js": <SiNodedotjs className="text-green-500" />,
+    NodeJS: <SiNodedotjs className="text-green-500" />,
+    Express: <SiExpress className="text-gray-400" />,
+    MongoDB: <SiMongodb className="text-green-600" />,
+    Mongoose: <SiMongodb className="text-green-600" />,
+    Cloudinary: <SiCloudinary className="text-blue-500" />,
+    OOP: <FaJs className="text-yellow-400" />,
+    "REST APIs": <SiExpress className="text-gray-400" />,
+    Clerk: <SiMui className="text-blue-400" />,
+    Multer: <SiNodedotjs className="text-green-500" />,
+    Nodemailer: <SiNodedotjs className="text-green-500" />,
+    "Nivo Charts": <SiReactquery className="text-pink-500" />,
+    FullCalendar: <FaReact className="text-sky-400" />,
+    Formik: <FaReact className="text-sky-400" />,
+    Yup: <FaReact className="text-sky-400" />,
   };
 
-  const filteredProjects = projects.filter((project) => project.category === activeFilter);
+  const filteredProjects = projects.filter(
+    (project) => project.category === activeFilter
+  );
 
   return (
     <div className="min-h-screen pt-20 pb-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-6xl mx-auto">
-        {/* Title */}
-       <motion.div
+      <div className="max-w-7xl mx-auto">
+        <motion.div
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-20"
+          className="text-center mb-16"
         >
           <h1 className="text-4xl font-bold mb-6 bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 bg-clip-text text-transparent">
             Projects
           </h1>
           <div className="w-24 h-1 bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 mx-auto rounded-full"></div>
           <p className="text-gray-400 mt-6 text-lg max-w-2xl mx-auto">
-           A curated selection of my work across different technologies
+            A curated selection of my work across different technologies
           </p>
         </motion.div>
 
-        {/* Filters */}
-       
-        <div className="flex justify-center gap-3 mb-10 flex-wrap">
+        <div className="flex justify-center gap-3 mb-12 flex-wrap">
           {categories.map((cat) => (
             <button
               key={cat}
               onClick={() => setActiveFilter(cat)}
-              className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-300 border ${
+              className={`px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 border ${
                 activeFilter === cat
-                  ? 'bg-purple-500/10 text-white border-purple-500 shadow-md'
-                  : 'text-gray-400 border-white/10 hover:text-white hover:border-purple-800/30'
+                  ? "bg-purple-500/20 text-white border-purple-500 shadow-lg "
+                  : "text-gray-400 border-white/10 hover:text-white hover:border-purple-500/50 hover:bg-purple-500/10"
               }`}
             >
               {cat}
@@ -117,55 +92,93 @@ const Projects = () => {
           ))}
         </div>
 
-        {/* Projects */}
-        <motion.div
-          initial="hidden"
-          animate="visible"
-          className="grid grid-cols-1 md:grid-cols-3 gap-6"
-        >
-          {filteredProjects.map((project) => (
-            <motion.div
-              key={project.name}
-              className="group border border-white/10 rounded-xl p-6 hover:border-white/20 transition-all"
-            >
-              <h3 className="text-lg font-semibold text-white mb-2">{project.name}</h3>
-              <p className="text-gray-400 text-sm mb-4">{project.description}</p>
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+          <AnimatePresence>
+            {filteredProjects.map((project) => (
+              <motion.div
+                key={project.name}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.3, ease: "easeInOut" }}
+                className="group  border border-purple-600/20 rounded-xl overflow-hidden  transition-all duration-300"
+              >
+                {/* Project Image with scale effect only */}
+                <div className="relative overflow-hidden">
+                  <img
+                    src={project.image}
+                    alt={project.name}
+                    className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
-              {/* Tech with icons */}
-              <div className="flex flex-wrap gap-3 mb-4">
-                {project.technologies.map((tech) => (
-                  <div
-                    key={tech}
-                    className="flex items-center gap-1 text-sm font-medium text-gray-300 bg-white/5 px-2 py-1 rounded-lg"
-                  >
-                    {iconsMap[tech] || <span>⚙️</span>}
-                    <span className="text-gray-300">{tech}</span>
+                  {/* Live Demo Badge */}
+                  {project.liveDemo && (
+                    <div className="absolute top-3 right-3">
+                      <span className="bg-green-500/90 text-white text-xs px-2 py-1 rounded-full backdrop-blur-sm">
+                        Live
+                      </span>
+                    </div>
+                  )}
+                </div>
+
+                {/* Project Content */}
+                <div className="p-6">
+                  <h3 className="text-lg font-semibold mb-2 text-transparent bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 bg-clip-text">
+                    {project.name}
+                  </h3>
+                  <p className="text-gray-400 text-sm mb-4 line-clamp-3">
+                    {project.description}
+                  </p>
+
+                  {/* Tech with icons */}
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {project.technologies.map((tech) => (
+                      <div
+                        key={tech}
+                        className="flex items-center gap-1 text-xs font-medium text-gray-300 bg-white/5 px-2 py-1 rounded-lg border border-white/5"
+                      >
+                        {iconsMap[tech] || <span>⚙️</span>}
+                        <span className="text-gray-300">{tech}</span>
+                      </div>
+                    ))}
                   </div>
-                ))}
-              </div>
 
-              {/* Buttons */}
-              <div className="flex gap-3 pt-3 border-t border-white/10">
-                {project.liveDemo && (
-                  <a
-                    href={project.liveDemo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 text-center px-3 py-2 bg-white/10 text-white rounded-lg text-sm hover:bg-white/20 transition-all"
-                  >
-                    View Project
-                  </a>
-                )}
-                <button
-                  disabled
-                  className="flex-1 text-center px-3 py-2 border border-white/10 text-gray-500 rounded-lg text-sm cursor-not-allowed"
-                >
-                  Code
-                </button>
-              </div>
-            </motion.div>
-          ))}
-        </motion.div>
+                  {/* Buttons */}
+                  <div className="flex gap-3 pt-4 border-t border-white/10">
+                    {project.liveDemo && (
+                      <a
+                        href={project.liveDemo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-1 text-center px-3 py-2 border border-purple-500 shadow-md bg-purple-800/20 text-white rounded-lg text-sm font-medium transition-all duration-300 transform hover:scale-105 hover:bg-purple-700/30"
+                      >
+                        View Project
+                      </a>
+                    )}
+                    {project.github ? (
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-1 text-center px-3 py-2 bg-white/5 text-white rounded-lg text-sm font-medium border border-white/10 hover:bg-white/10 transition-all duration-300"
+                      >
+                        Code
+                      </a>
+                    ) : (
+                      <button
+                        className="flex-1 text-center px-3 py-2 bg-white/5 text-gray-400 rounded-lg text-sm font-medium border border-white/10 cursor-not-allowed"
+                        disabled
+                      >
+                        Code Private
+                      </button>
+                    )}
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </AnimatePresence>
+        </div>
       </div>
     </div>
   );
