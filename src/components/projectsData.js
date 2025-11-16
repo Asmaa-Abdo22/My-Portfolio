@@ -257,7 +257,7 @@ export const projects = [
         description: "A responsive and modern landing page about movies",
         technologies: ["Bootstrap", "Html"],
         category: "HTML & CSS",
-        liveDemo: "https://asmaa-abdo22.github.io/Tempo/",
+        liveDemo: "https://asmaa-abdo22.github.io/Movies//",
         github: "https://github.com/Asmaa-Abdo22/Movies",
         image: Movies,
       },
