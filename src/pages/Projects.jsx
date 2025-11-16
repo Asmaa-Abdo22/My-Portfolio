@@ -6,7 +6,6 @@ import {
   FaHtml5,
   FaCss3Alt,
   FaBootstrap,
-  FaNodeJs,
 } from "react-icons/fa";
 import {
   SiTailwindcss,
@@ -17,6 +16,12 @@ import {
   SiMongodb,
   SiNodedotjs,
   SiCloudinary,
+  SiNextdotjs,
+  SiTypescript,
+  SiGooglecalendar,
+  SiClerk,
+  SiFramer,
+  SiChartdotjs,
 } from "react-icons/si";
 import { projects, categories } from "../components/projectsData.js";
 
@@ -25,7 +30,9 @@ const Projects = () => {
 
   const iconsMap = {
     React: <FaReact className="text-sky-400" />,
+    Nextjs: <SiNextdotjs className="text-white" />,
     JavaScript: <FaJs className="text-yellow-400" />,
+    TypeScript: <SiTypescript className="text-blue-500" />,
     HTML: <FaHtml5 className="text-orange-500" />,
     CSS: <FaCss3Alt className="text-blue-500" />,
     "Tailwind CSS": <SiTailwindcss className="text-cyan-400" />,
@@ -35,7 +42,10 @@ const Projects = () => {
     Redux: <SiRedux className="text-purple-400" />,
     "React Query": <SiReactquery className="text-pink-500" />,
     Recoil: <FaReact className="text-sky-400" />,
-    "Framer-Motion": <FaReact className="text-sky-400" />,
+    Formik: <FaReact className="text-sky-400" />,
+    Yup: <FaJs className="text-yellow-400" />,
+    "Framer-Motion": <SiFramer className="text-pink-500" />,
+    FramerMotion: <SiFramer className="text-pink-500" />,
     "React Awesome Reveal": <FaReact className="text-sky-400" />,
     "Node.js": <SiNodedotjs className="text-green-500" />,
     NodeJS: <SiNodedotjs className="text-green-500" />,
@@ -45,13 +55,12 @@ const Projects = () => {
     Cloudinary: <SiCloudinary className="text-blue-500" />,
     OOP: <FaJs className="text-yellow-400" />,
     "REST APIs": <SiExpress className="text-gray-400" />,
-    Clerk: <SiMui className="text-blue-400" />,
+    Clerk: <SiClerk className="text-purple-500" />,
     Multer: <SiNodedotjs className="text-green-500" />,
     Nodemailer: <SiNodedotjs className="text-green-500" />,
-    "Nivo Charts": <SiReactquery className="text-pink-500" />,
-    FullCalendar: <FaReact className="text-sky-400" />,
-    Formik: <FaReact className="text-sky-400" />,
-    Yup: <FaReact className="text-sky-400" />,
+    Nivo: <SiChartdotjs className="text-pink-400" />,
+    "Nivo Charts": <SiChartdotjs className="text-pink-400" />,
+    FullCalendar: <SiGooglecalendar className="text-blue-400" />,
   };
 
   const filteredProjects = projects.filter(
@@ -101,9 +110,8 @@ const Projects = () => {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -20 }}
                 transition={{ duration: 0.3, ease: "easeInOut" }}
-                className="group  border border-purple-600/20 rounded-xl overflow-hidden  transition-all duration-300"
+                className="group border border-purple-600/20 rounded-xl overflow-hidden transition-all duration-300"
               >
-                {/* Project Image with scale effect only */}
                 <div className="relative overflow-hidden">
                   <img
                     src={project.image}
@@ -112,7 +120,6 @@ const Projects = () => {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
-                  {/* Live Demo Badge */}
                   {project.liveDemo && (
                     <div className="absolute top-3 right-3">
                       <span className="bg-green-500/90 text-white text-xs px-2 py-1 rounded-full backdrop-blur-sm">
@@ -122,7 +129,6 @@ const Projects = () => {
                   )}
                 </div>
 
-                {/* Project Content */}
                 <div className="p-6">
                   <h3 className="text-lg font-semibold mb-2 text-transparent bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 bg-clip-text">
                     {project.name}
@@ -131,7 +137,6 @@ const Projects = () => {
                     {project.description}
                   </p>
 
-                  {/* Tech with icons */}
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.technologies.map((tech) => (
                       <div
@@ -144,7 +149,6 @@ const Projects = () => {
                     ))}
                   </div>
 
-                  {/* Buttons */}
                   <div className="flex gap-3 pt-4 border-t border-white/10">
                     {project.liveDemo && (
                       <a

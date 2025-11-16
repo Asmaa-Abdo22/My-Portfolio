@@ -155,7 +155,7 @@ export const projects = [
         name: "RGB Game",
         description:
           "A simple game in which you can select between easy or hard level and in each level you can check if the selected color is the right or not",
-        technologies: ["JavaScript", "Bootstrap", "Html"],
+        technologies: ["JavaScript", "Bootstrap", "HTML"],
         category: "JavaScript",
         liveDemo: "https://asmaa-abdo22.github.io/RGB-Game/",
         github: "https://github.com/Asmaa-Abdo22/RGB-Game",
@@ -165,27 +165,18 @@ export const projects = [
         name: "Weather App",
         description:
           "A simple weather forecast application that shows the weather for the next 3 days.",
-        technologies: ["JavaScript", "Bootstrap", "Html"],
+        technologies: ["JavaScript", "Bootstrap", "HTML"],
         category: "JavaScript",
         liveDemo: "https://asmaa-abdo22.github.io/3DaysWeather/",
         github: "https://github.com/Asmaa-Abdo22/3DaysWeather",
         image: weatherApp,
       },
-      {
-        name: "Chicken Invaders Game",
-        description:
-          "This is a small JavaScript DOM exercise where a spaceship moves with the mouse or arrow keys, and chickens are generated dynamically",
-        technologies: ["JavaScript", "CSS3", "Html"],
-        category: "JavaScript",
-        liveDemo: "https://asmaa-abdo22.github.io/Chicken-Invaders-Game-/",
-        github: "https://github.com/Asmaa-Abdo22/Chicken-Invaders-Game-",
-        image: chickenInvaders,
-      },
+    
       {
         name: "Product Management System",
         description:
           "A modern, responsive Product Management System with full CRUD (Create, Read, Update, Delete, Search) functionality, featuring elegant animations and a clean user interface.",
-        technologies: ["JavaScript", "Bootstrap", "Html"],
+        technologies: ["JavaScript", "Bootstrap", "HTML"],
         category: "JavaScript",
         liveDemo: "https://asmaa-abdo22.github.io/Product-Management-System/",
         github: "https://github.com/Asmaa-Abdo22/Product-Management-System",
@@ -194,59 +185,71 @@ export const projects = [
       {
         name: "CAPATCHA-GENERATOR",
         description:
-          "A simple website where you can enter a text similar to the displayed text and then check whether the text is correct or not . using html, css and javascript.",
-        technologies: ["JavaScript", "css", "Html"],
+          "A simple website where you can enter a text similar to the displayed text and then check whether the text is correct or not . using HTML, CSS and javascript.",
+        technologies: ["JavaScript", "HTML", "CSS"],
         category: "JavaScript",
         liveDemo: "https://asmaa-abdo22.github.io/CAPATCHA-GENERATOR/",
         github: "https://github.com/Asmaa-Abdo22/CAPATCHA-GENERATOR",
         image: capthca,
       },
-      {
-        name: "Expanding-Cardss",
+       {
+        name: "Bookmark",
         description:
-          "In this app, you can click on the cards to expand them, and double-click to back it to its original width",
-        technologies: ["JavaScript", "css", "Html"],
+          "A web application to manage your favorite bookmarks. Users can add, view, edit, and delete bookmarks, all stored locally using the browser’s local storage.",
+        technologies: ["JavaScript", "HTML", "CSS"],
         category: "JavaScript",
-        liveDemo: "https://asmaa-abdo22.github.io/Expanding-Cardss/",
-        github: "https://github.com/Asmaa-Abdo22/Expanding-Cardss",
-        image: expandingCards,
+        liveDemo: "https://asmaa-abdo22.github.io/Bookmark/",
+        github: "https://github.com/Asmaa-Abdo22/Bookmark",
+        image: bookmark,
       },
+      
       {
         name: "Smart Login System",
         description:
           "A smart authentication interface powered by vanilla HTML, CSS, and JavaScript, offering form validation and a user-friendly design.",
-        technologies: ["JavaScript", "css", "Html"],
+        technologies: ["JavaScript","HTML", "CSS"],
         category: "JavaScript",
         liveDemo: "https://asmaa-abdo22.github.io/Smart-Login-System/",
         github: "https://github.com/Asmaa-Abdo22/Smart-Login-System",
         image: SmartLoginSystem,
       },
       {
-        name: "Bookmark",
+        name: "Expanding-Cardss",
         description:
-          "A web application to manage your favorite bookmarks. Users can add, view, edit, and delete bookmarks, all stored locally using the browser’s local storage.",
-        technologies: ["JavaScript", "css", "Html"],
+          "In this app, you can click on the cards to expand them, and double-click to back it to its original width",
+        technologies: ["JavaScript","HTML", "CSS"],
         category: "JavaScript",
-        liveDemo: "https://asmaa-abdo22.github.io/Bookmark/",
-        github: "https://github.com/Asmaa-Abdo22/Bookmark",
-        image: bookmark,
+        liveDemo: "https://asmaa-abdo22.github.io/Expanding-Cardss/",
+        github: "https://github.com/Asmaa-Abdo22/Expanding-Cardss",
+        image: expandingCards,
+      },
+     
+        {
+        name: "Chicken Invaders Game",
+        description:
+          "This is a small JavaScript DOM exercise where a spaceship moves with the mouse or arrow keys, and chickens are generated dynamically",
+        technologies: ["JavaScript","HTML", "CSS"],
+        category: "JavaScript",
+        liveDemo: "https://asmaa-abdo22.github.io/Chicken-Invaders-Game-/",
+        github: "https://github.com/Asmaa-Abdo22/Chicken-Invaders-Game-",
+        image: chickenInvaders,
       },
       {
         name: "Random Quote App",
         description:
           "A simple and interactive web application that displays random quotes with the click of a button.",
-        technologies: ["JavaScript", "css", "Html"],
+        technologies: ["JavaScript", "HTML", "CSS"],
         category: "JavaScript",
         liveDemo: "https://asmaa-abdo22.github.io/Quote/",
         github: "https://github.com/Asmaa-Abdo22/Quote",
         image: quote,
       },
-      //HTml &css
+      //HTML &CSS
       {
         name: "Tempo",
         description:
           "Aresponsive and elegant business template built with Bootstrap",
-        technologies: ["Bootstrap", "Html"],
+        technologies: ["Bootstrap", "HTML"],
         category: "HTML & CSS",
         liveDemo: "https://asmaa-abdo22.github.io/Tempo/",
         github: "https://github.com/Asmaa-Abdo22/Tempo",
@@ -255,35 +258,18 @@ export const projects = [
       {
         name: "Movies",
         description: "A responsive and modern landing page about movies",
-        technologies: ["Bootstrap", "Html"],
+        technologies: ["Bootstrap", "HTML"],
         category: "HTML & CSS",
         liveDemo: "https://asmaa-abdo22.github.io/Movies//",
         github: "https://github.com/Asmaa-Abdo22/Movies",
         image: Movies,
       },
-      {
-        name: "Solar Panel",
-        description: "A responsive and modern landing page  for solar panel",
-        technologies: ["Bootstrap", "Html"],
-        category: "HTML & CSS",
-        liveDemo: "https://asmaa-abdo22.github.io/Solar-Panel/",
-        github: "https://github.com/Asmaa-Abdo22/Solar-Panel",
-        image: SolarPanel,
-      },
-      {
-        name: "Kerri",
-        description:
-          "A responsive and modern landing page  for popular Kerri Template",
-        technologies: ["Bootstrap", "Html"],
-        category: "HTML & CSS",
-        liveDemo: "https://asmaa-abdo22.github.io/Kerri-Land-P/",
-        github: "https://github.com/Asmaa-Abdo22/Kerri-Land-P",
-        image: kerri,
-      },
+     
+     
       {
         name: "Groovin",
         description: "A responsive and modern landing page  ",
-        technologies: ["Bootstrap", "Html"],
+        technologies: ["Bootstrap", "HTML"],
         category: "HTML & CSS",
         liveDemo: "https://asmaa-abdo22.github.io/Groovin-Template/",
         github: "https://github.com/Asmaa-Abdo22/Groovin-Template",
@@ -292,25 +278,17 @@ export const projects = [
       {
         name: "Party",
         description: "Landing Page with practice jquery",
-        technologies: ["BOOTSTRAP", "Html", "jquery"],
+        technologies: ["Bootstrap", "HTML", "jquery"],
         category: "HTML & CSS",
         liveDemo: "https://asmaa-abdo22.github.io/Party/",
         github: "https://github.com/Asmaa-Abdo22/Party",
         image: party,
       },
-      {
-        name: "Fokir Personal Portfolio",
-        description: "This is a Template Personal Portfolio Named as Alex Smith.",
-        technologies: ["css", "Html"],
-        category: "HTML & CSS",
-        liveDemo: "https://asmaa-abdo22.github.io/Fokir//",
-        github: "https://github.com/Asmaa-Abdo22/Fokir",
-        image: fokir,
-      },
+      
       {
         name: "Mealify",
         description: "This is a Landing Page",
-        technologies: ["css", "Html"],
+        technologies: ["CSS", "HTML"],
         category: "HTML & CSS",
         liveDemo: "https://asmaa-abdo22.github.io/Mealify/",
         github: "https://github.com/Asmaa-Abdo22/Mealify",
@@ -319,29 +297,57 @@ export const projects = [
       {
         name: "Defolio",
         description: "it's a simple website to enhance ui skills",
-        technologies: ["BOOTSTRAP", "Html"],
+        technologies: ["Bootstrap", "HTML"],
         category: "HTML & CSS",
         liveDemo: "https://asmaa-abdo22.github.io/Defolio/",
         github: "https://github.com/Asmaa-Abdo22/Defolio",
         image: Defolio,
       },
+       {
+        name: "Solar Panel",
+        description: "A responsive and modern landing page  for solar panel",
+        technologies: ["Bootstrap", "HTML"],
+        category: "HTML & CSS",
+        liveDemo: "https://asmaa-abdo22.github.io/Solar-Panel/",
+        github: "https://github.com/Asmaa-Abdo22/Solar-Panel",
+        image: SolarPanel,
+      },
       {
         name: "Leon",
         description: "Landing Page",
-        technologies: ["BOOTSTRAP", "Html"],
+        technologies: ["Bootstrap", "HTML"],
         category: "HTML & CSS",
         liveDemo: "https://asmaa-abdo22.github.io/Leon/",
         github: "https://github.com/Asmaa-Abdo22/Leon",
         image: leon,
       },
       {
+        name: "Fokir Personal Portfolio",
+        description: "This is a Template Personal Portfolio Named as Alex Smith.",
+        technologies: ["CSS", "HTML"],
+        category: "HTML & CSS",
+        liveDemo: "https://asmaa-abdo22.github.io/Fokir//",
+        github: "https://github.com/Asmaa-Abdo22/Fokir",
+        image: fokir,
+      },
+      {
         name: "Daniels",
         description: "Landing Page",
-        technologies: ["BOOTSTRAP", "Html"],
+        technologies: ["Bootstrap", "HTML"],
         category: "HTML & CSS",
         liveDemo: "https://asmaa-abdo22.github.io/Daniels-website/",
         github: "https://github.com/Asmaa-Abdo22/Daniels-website",
         image: daniels,
+      },
+       {
+        name: "Kerri",
+        description:
+          "A responsive and modern landing page  for popular Kerri Template",
+        technologies: ["Bootstrap", "HTML"],
+        category: "HTML & CSS",
+        liveDemo: "https://asmaa-abdo22.github.io/Kerri-Land-P/",
+        github: "https://github.com/Asmaa-Abdo22/Kerri-Land-P",
+        image: kerri,
       },
 ];
 
