@@ -101,7 +101,7 @@ const Projects = () => {
           ))}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 px-5">
           <AnimatePresence>
             {filteredProjects.map((project) => (
               <motion.div
@@ -110,7 +110,7 @@ const Projects = () => {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -20 }}
                 transition={{ duration: 0.3, ease: "easeInOut" }}
-                className="group border border-purple-600/20 rounded-xl overflow-hidden transition-all duration-300"
+                className="group border  border-purple-600/20 rounded-xl overflow-hidden transition-all duration-300"
               >
                 <div className="relative overflow-hidden">
                   <img
@@ -155,7 +155,7 @@ const Projects = () => {
                         href={project.liveDemo}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex-1 text-center px-3 py-2 border border-purple-500 shadow-md bg-purple-800/20 text-white rounded-lg text-sm font-medium transition-all duration-300 transform hover:scale-105 hover:bg-purple-700/30"
+                        className="flex-1 text-center px-3 py-2 border border-purple-500/30 bg-purple-500/10 text-white shadow-md  hover:bg-purple-500/1 rounded-lg text-sm font-medium transition-all duration-300 transform hover:scale-105"
                       >
                         View Project
                       </a>
