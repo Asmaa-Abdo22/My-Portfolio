@@ -35,7 +35,7 @@ import party from "../assets/party.PNG";
 import lms from "../assets/lms.PNG"
 export const projects = [
   {
-  name: "FullStack LMS Website",
+  name: "FullStack LMS ",
   description: "A Full-featured Learning Management System (LMS) that provides a seamless experience for both students and educators. It allows course browsing, enrollment, progress tracking, content management, and secure payments with an intuitive interface.",
   technologies: ["React", "Tailwind CSS", "Node.js", "Express", "MongoDB", "Mongoose", "Clerk", "Multer", "Cloudinary", "Stripe", "Quill.js"],
   category: "React",
