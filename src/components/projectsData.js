@@ -32,8 +32,18 @@ import Defolio from "../assets/Defolio.PNG";
 import leon from "../assets/leon.PNG";
 import daniels from "../assets/daniels.PNG";
 import party from "../assets/party.PNG";
-
+import lms from "../assets/lms.PNG"
 export const projects = [
+  {
+  name: "FullStack LMS Website",
+  description: "A Full-featured Learning Management System (LMS) that provides a seamless experience for both students and educators. It allows course browsing, enrollment, progress tracking, content management, and secure payments with an intuitive interface.",
+  technologies: ["React", "Tailwind CSS", "Node.js", "Express", "MongoDB", "Mongoose", "Clerk", "Multer", "Cloudinary", "Stripe", "Quill.js"],
+  category: "React",
+  liveDemo: "https://full-stack-lms-inky.vercel.app/",
+  github: "https://github.com/Asmaa-Abdo22/FullStack-LMS",
+  image: lms, 
+}
+,
   {
     name: "FullStack Hotel Booking App",
     description: "A Full-featured hotel booking platform provides a seamless experience for both travelers and hotel owners, offering an intuitive interface for browsing, booking, and managing hotel accommodations.",
