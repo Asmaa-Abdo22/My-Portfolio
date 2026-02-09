@@ -255,35 +255,7 @@ const About = () => {
           </motion.div>
         </motion.div>
 
-        {/* Call to Action */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          viewport={{ once: true }}
-          className="text-center"
-        >
-          <div className="bg-gradient-to-r from-pink-400/10 via-purple-500/10 to-purple-500/10 backdrop-blur-xl rounded-2xl p-8 border border-white/10">
-            <h3 className="text-2xl font-bold text-white mb-4">
-              Ready to Bring Your Ideas to Life?
-            </h3>
-            <p className="text-gray-400 mb-6 max-w-2xl mx-auto">
-              Let's collaborate to create something amazing. I'm always excited
-              to take on new challenges and work on innovative projects.
-            </p>
-            <motion.button
-              onClick={() => {
-                navigate("/contact");
-                window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-              }}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="px-8 py-3 bg-gradient-to-r from-pink-600 to-purple-700 text-white rounded-xl font-semibold hover:shadow-lg transition-all duration-300"
-            >
-              Get In Touch
-            </motion.button>
-          </div>
-        </motion.div>
+        
       </div>
     </section>
   );
