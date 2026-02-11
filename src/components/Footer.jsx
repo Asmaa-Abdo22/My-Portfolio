@@ -62,15 +62,15 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="relative mt-20 overflow-hidden">
+    <footer className="relative mt-5 overflow-hidden">
       {/* Elegant gradient background */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#221D52]/10 to-[#221D52]/30"></div>
 
       {/* Decorative top border */}
-      <div className="relative h-px bg-gradient-to-r from-transparent via-[#221D52]/50 to-transparent mb-8"></div>
+      <div className="relative h-px bg-gradient-to-r from-transparent via-[#221D52]/90 to-transparent mb-8"></div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-5">
           {/* Brand Section */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -79,12 +79,12 @@ const Footer = () => {
             transition={{ duration: 0.5 }}
             className="space-y-3"
           >
-            <h2 className="text-2xl font-bold bg-gradient-to-r from-[#544ab0] to-[#e132e1] bg-clip-text text-transparent">
+            <h2 className="text-3xl font-bold bg-gradient-to-r from-[#544ab0] to-[#e132e1] bg-clip-text text-transparent">
               Asmaa Abdo
             </h2>
-            <p className="text-gray-400 font-medium">Front-End Developer</p>
+            <p className="text-gray-400 font-medium text-sm">Front-End Developer</p>
             <p className="text-sm text-gray-500 flex items-center gap-2">
-              <span className="w-2 h-2 bg-pink-400 rounded-full animate-pulse"></span>
+              <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
               Available to relocate
             </p>
           </motion.div>
@@ -161,17 +161,14 @@ const Footer = () => {
         </div>
 
         {/* Bottom Section */}
-        <div className="pt-8 border-t border-[#221D52]/20">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="pt-10 border-t border-[#221D52]/70">
+          <div className="flex flex-col md:flex-row justify-center items-center gap-4">
             <p className="text-sm text-gray-500">
               © {currentYear}{" "}
               <span className="text-gray-400 font-medium">Asmaa Abdo</span>. All
               rights reserved.
             </p>
-            <p className="text-xs text-gray-400">
-              Built with <span className="text-purple-500">❤</span> using React &
-              Tailwind CSS
-            </p>
+            
           </div>
         </div>
       </div>

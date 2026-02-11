@@ -121,9 +121,9 @@ const Home = () => {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-lg md:text-xl text-gray-400 max-w-3xl leading-relaxed mb-10"
             >
-              Passionate about crafting elegant, responsive, and user-centric
-              web experiences using modern technologies like React.js, Next.js,
-              and TypeScript.
+            passionate about building seamless, user-friendly web applications using React, Next.js, and TypeScript, with a focus on performance, accessibility, and modern design.
+
+
             </motion.p>
 
             {/* Buttons */}

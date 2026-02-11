@@ -192,7 +192,8 @@ const Experience = () => {
                 <motion.div 
                   className={`bg-gray-800/30 backdrop-blur-sm rounded-xl p-5 border ${getBorderColor(item.type)} hover:border-purple-500/30 transition-all duration-300`}
                   whileHover={{ 
-                    scale: 1.02,
+                    
+                    
                     boxShadow: "0 10px 30px -10px rgba(147, 51, 234, 0.3)"
                   }}
                 >

@@ -49,6 +49,7 @@ const About = () => {
       "Supabase",
     ],
     Concepts: [
+      "Problem Solving",
       "Responsive Design",
       "State Management",
       "Component Architecture",
@@ -235,7 +236,7 @@ const About = () => {
                         return (
                           <motion.span
                             key={skill}
-                            whileHover={{ scale: 1.05, y: -2 }}
+                            whileHover={{ scale: 1.05 }}
                             className="flex items-center gap-2 px-3 py-2 bg-white/5 rounded-lg border border-white/10 hover:border-purple-500/30 transition-all duration-300 group"
                           >
                             {IconComponent && (
