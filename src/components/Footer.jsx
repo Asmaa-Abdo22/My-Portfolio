@@ -89,12 +89,12 @@ const Footer = () => {
               Quick Links
             </h3>
             <ul className="space-y-2">
-              {["Home", "About", "Projects", "Skills", "Contact"].map(
+              {["Home", "About", "Projects", "Experience", "Contact"].map(
                 (link) => (
                   <li key={link}>
                     <Link
                       to={link === "Home" ? "/" : `/${link.toLowerCase()}`}
-                      className="text-gray-400 hover:text-white transition-colors duration-200 text-sm flex items-center gap-2 group"
+                      className="text-gray-400 hover:text-[#695be6] transition-colors duration-200 text-sm flex items-center gap-2 group"
                     >
                       <span className="w-1 h-1 bg-[#221D52] rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
                       {link}
