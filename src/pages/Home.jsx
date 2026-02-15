@@ -172,7 +172,7 @@ const Home = () => {
               <motion.div
                 animate={{ rotate: 360 }}
                 transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                className="absolute -inset-4 rounded-full bg-gradient-to-r from-pink-500/20 via-purple-500/20 to-blue-500/20 blur-lg"
+                className="absolute -inset-4 rounded-full "
               />
 
               <motion.div whileHover={{ scale: 1.05 }}>
