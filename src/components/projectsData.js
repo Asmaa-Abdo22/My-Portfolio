@@ -32,8 +32,18 @@ import Defolio from "../assets/Defolio.PNG";
 import leon from "../assets/leon.PNG";
 import daniels from "../assets/daniels.PNG";
 import party from "../assets/party.PNG";
-import lms from "../assets/lms.PNG"
+import lms from "../assets/lms.PNG";
+import foddiesApp from "../assets/foodiesApp.png"
 export const projects = [
+  {
+  name: "Foodies App",
+  description: "A Next.js demo application for browsing and sharing meals. The project demonstrates App Router, Server Actions, image uploads, and server-side data handling using TypeScript.",
+  technologies: ["Nextjs", "React", "TypeScript", "App Router", "Tailwind CSS"],
+  category: "Next js",
+  liveDemo: "https://foodies-app-maximilian.vercel.app/",
+  github: "https://github.com/Asmaa-Abdo22/FoodiesApp-Maximilian",
+  image: foddiesApp,
+},
   {
   name: "FullStack LMS ",
   description: "A Full-featured Learning Management System (LMS) that provides a seamless experience for both students and educators. It allows course browsing, enrollment, progress tracking, content management, and secure payments with an intuitive interface.",
@@ -361,4 +371,4 @@ export const projects = [
       },
 ];
 
-export const categories = ["React", "JavaScript", "HTML & CSS"];
+export const categories = ["Nextjs" ,"React", "JavaScript", "HTML & CSS"];
