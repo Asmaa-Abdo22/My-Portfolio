@@ -371,4 +371,4 @@ export const projects = [
       },
 ];
 
-export const categories = ["Nextjs" ,"React", "JavaScript", "HTML & CSS"];
+export const categories = ["Next js" ,"React", "JavaScript", "HTML & CSS"];
